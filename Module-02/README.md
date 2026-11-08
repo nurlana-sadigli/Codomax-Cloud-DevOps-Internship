@@ -1,7 +1,7 @@
 # Module 02 – Linux, Networking & Cloud Infrastructure
 
 ## Overview
-This module covers Linux administration, networking fundamentals, and Linux server deployment using Ubuntu.
+This module covers Linux administration, networking fundamentals, SSH configuration, and Linux server deployment using Ubuntu.
 
 ## 1. Linux CLI
 
@@ -73,19 +73,28 @@ This module covers Linux administration, networking fundamentals, and Linux serv
 
 ## 7. Linux Server Deployment
 
-Practical deployment steps:
+A local Linux web server was deployed using Ubuntu 24.04 LTS and Nginx.
 
-1. Create a Virtual Machine.
-2. Configure the Linux operating system.
-3. Secure SSH access.
-4. Configure networking and firewall.
-5. Deploy a service.
-6. Test connectivity.
+### Steps Performed
+
+1. Create a Virtual Machine using VMware.
+2. Configure Ubuntu 24.04 LTS and update the system.
+3. Enable SSH access and generate an Ed25519 SSH key pair.
+4. Check network configuration, DNS resolution, listening ports, and firewall status.
+5. Install and start the Nginx web server.
+6. Create a custom HTML page at `/var/www/html/index.html`.
+7. Test the web server using `curl http://localhost`.
+
+### Deployment Result
+
+Successfully deployed a local Nginx web server on Ubuntu and verified its functionality using a custom HTML page.
 
 ## Practical Environment
 
 - Operating System: Ubuntu 24.04 LTS
 - Virtualization: VMware
+- Web Server: Nginx
+- Access Protocol: SSH
 - Platform: Linux Terminal
 
 ## Screenshots
@@ -94,4 +103,4 @@ Practical screenshots are stored in the Screenshots directory.
 
 ## Progress
 
-Status: In Progress
+Status: Completed
